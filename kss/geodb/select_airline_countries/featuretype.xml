@@ -1,0 +1,57 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-3ee84f38:154c9f4eef1:-4b45</id>
+  <name>select_airline_countries</name>
+  <nativeName>select_airline_countries</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--528cc166:153895e4e75:-7ffd</id>
+  </namespace>
+  <title>select_airline_countries</title>
+  <keywords>
+    <string>features</string>
+    <string>select_airline_countries</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>-1.0</minx>
+    <maxx>0.0</maxx>
+    <miny>-1.0</miny>
+    <maxy>0.0</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.0</minx>
+    <maxx>0.0</maxx>
+    <miny>-1.0</miny>
+    <maxy>0.0</maxy>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>select_airline_countries</name>
+        <sql>select distinct airports.country&#xd;
+from routes, airports, airlines &#xd;
+where &#xd;
+	routes.airline_id = airlines.airline_id and &#xd;
+	(airports.airport_id = routes.source_airport_id or airports.airport_id = routes.destination_airport_id)&#xd;
+	and airlines.airline_id = %AIRLINE_ID%
+</sql>
+        <escapeSql>false</escapeSql>
+        <parameter>
+          <name>AIRLINE_ID</name>
+          <defaultValue>1</defaultValue>
+          <regexpValidator>^[\d]+$</regexpValidator>
+        </parameter>
+      </virtualTable>
+    </entry>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--528cc166:153895e4e75:-7ff6</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

@@ -1,0 +1,22 @@
+<dataStore>
+  <id>DataStoreInfoImpl--528cc166:153895e4e75:-7ffc</id>
+  <name>bremen_3level</name>
+  <type>Shapefile</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--528cc166:153895e4e75:-7ffe</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="charset">ISO-8859-1</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="create spatial index">true</entry>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="timezone">Europe/Berlin</entry>
+    <entry key="enable spatial index">true</entry>
+    <entry key="namespace">http://localhost/kss</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="url">file:kss/bremen_3level.shp/bremen_3level.shp</entry>
+    <entry key="fstype">shape</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

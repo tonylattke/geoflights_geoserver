@@ -1,0 +1,15 @@
+<layer>
+  <name>select_destiny_airports</name>
+  <id>LayerInfoImpl--273dc35a:154a67796ee:-26a6</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--7df439a1:1547a429594:-6052</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--273dc35a:154a67796ee:-26a7</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

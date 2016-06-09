@@ -1,0 +1,67 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-64e4fc48:154a8d0c2af:-7fbe</id>
+  <name>select_source_airports</name>
+  <nativeName>select_origin_airports</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--528cc166:153895e4e75:-7ffd</id>
+  </namespace>
+  <title>select_source_airports</title>
+  <keywords>
+    <string>features</string>
+    <string>select_origin_airports</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>144.295861</minx>
+    <maxx>147.22005</maxx>
+    <miny>-9.443383</miny>
+    <maxy>-5.207083</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>144.295861</minx>
+    <maxx>147.22005</maxx>
+    <miny>-9.443383</miny>
+    <maxy>-5.207083</maxy>
+    <crs>GEOGCS[&quot;WGS84(DD)&quot;, 
+  DATUM[&quot;WGS84&quot;, 
+    SPHEROID[&quot;WGS84&quot;, 6378137.0, 298.257223563]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Geodetic longitude&quot;, EAST], 
+  AXIS[&quot;Geodetic latitude&quot;, NORTH]]</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>select_origin_airports</name>
+        <sql>select source_airport_id as airport_id, airports.geom, airports.country, airports.name, airports.latitude, airports.longitude&#xd;
+from airports, routes &#xd;
+where airports.airport_id = routes.source_airport_id&#xd;
+and routes.destination_airport_id = %S_AIRPORT_ID%
+</sql>
+        <escapeSql>false</escapeSql>
+        <geometry>
+          <name>geom</name>
+          <type>Geometry</type>
+          <srid>-1</srid>
+        </geometry>
+        <parameter>
+          <name>S_AIRPORT_ID</name>
+          <defaultValue>1</defaultValue>
+          <regexpValidator>^[\d]+$</regexpValidator>
+        </parameter>
+      </virtualTable>
+    </entry>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--528cc166:153895e4e75:-7ff6</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

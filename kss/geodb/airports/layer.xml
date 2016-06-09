@@ -1,0 +1,15 @@
+<layer>
+  <name>airports</name>
+  <id>LayerInfoImpl--7df439a1:1547a429594:-7fff</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--7df439a1:1547a429594:-6052</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--7df439a1:1547a429594:-8000</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

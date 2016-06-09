@@ -1,0 +1,62 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-3ee84f38:154ca21f2d8:3254</id>
+  <name>select_airlne_airports</name>
+  <nativeName>select_airlne_airports</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--528cc166:153895e4e75:-7ffd</id>
+  </namespace>
+  <title>select_airlne_airports</title>
+  <keywords>
+    <string>features</string>
+    <string>select_airlne_airports</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>-1.0</minx>
+    <maxx>0.0</maxx>
+    <miny>-1.0</miny>
+    <maxy>0.0</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.0</minx>
+    <maxx>0.0</maxx>
+    <miny>-1.0</miny>
+    <maxy>0.0</maxy>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>select_airlne_airports</name>
+        <sql>select distinct airports.name, airports.airport_id, airports.geom&#xd;
+from routes, airports, airlines &#xd;
+where &#xd;
+	routes.airline_id = airlines.airline_id and &#xd;
+	(airports.airport_id = routes.source_airport_id or airports.airport_id = routes.destination_airport_id)&#xd;
+	and airlines.airline_id = %AIRLINE_ID%
+</sql>
+        <escapeSql>false</escapeSql>
+        <geometry>
+          <name>geom</name>
+          <type>Geometry</type>
+          <srid>-1</srid>
+        </geometry>
+        <parameter>
+          <name>AIRLINE_ID</name>
+          <defaultValue>1</defaultValue>
+          <regexpValidator>^[\d]+$</regexpValidator>
+        </parameter>
+      </virtualTable>
+    </entry>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--528cc166:153895e4e75:-7ff6</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

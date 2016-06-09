@@ -1,0 +1,52 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--2d17b3ff:154ba976700:-7fa2</id>
+  <name>select_country_airlines</name>
+  <nativeName>select_country_airlines</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--528cc166:153895e4e75:-7ffd</id>
+  </namespace>
+  <title>select_country_airlines</title>
+  <keywords>
+    <string>features</string>
+    <string>select_country_airlines</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>-1.0</minx>
+    <maxx>0.0</maxx>
+    <miny>-1.0</miny>
+    <maxy>0.0</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.0</minx>
+    <maxx>0.0</maxx>
+    <miny>-1.0</miny>
+    <maxy>0.0</maxy>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>select_country_airlines</name>
+        <sql>select airlines.airline_id, airlines.name from airlines where airlines.country like &apos;%COUNTRY_NAME%&apos;
+</sql>
+        <escapeSql>false</escapeSql>
+        <parameter>
+          <name>COUNTRY_NAME</name>
+          <defaultValue>Germany</defaultValue>
+          <regexpValidator>^[\w\d\s]+$</regexpValidator>
+        </parameter>
+      </virtualTable>
+    </entry>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--528cc166:153895e4e75:-7ff6</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

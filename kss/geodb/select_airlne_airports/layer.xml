@@ -1,0 +1,15 @@
+<layer>
+  <name>select_airlne_airports</name>
+  <id>LayerInfoImpl-3ee84f38:154ca21f2d8:3255</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--7df439a1:1547a429594:-6052</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-3ee84f38:154ca21f2d8:3254</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

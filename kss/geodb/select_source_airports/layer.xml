@@ -1,0 +1,15 @@
+<layer>
+  <name>select_source_airports</name>
+  <id>LayerInfoImpl-64e4fc48:154a8d0c2af:-7fbd</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--7df439a1:1547a429594:-6052</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-64e4fc48:154a8d0c2af:-7fbe</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

@@ -1,0 +1,15 @@
+<layer>
+  <name>select_airline_countries</name>
+  <id>LayerInfoImpl-3ee84f38:154c9f4eef1:-4b44</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--7df439a1:1547a429594:-6052</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-3ee84f38:154c9f4eef1:-4b45</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>
